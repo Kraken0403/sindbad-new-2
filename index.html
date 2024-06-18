@@ -327,6 +327,9 @@
               <div class="slider-item">
                 <img src="./assets/papa (14).webp" alt="" />
               </div>
+              <div class="slider-item">
+                <img src="./assets/arbre.jpg" alt="" />
+              </div>
             </div>
 
             <div class="slider slider-nav">
@@ -338,7 +341,7 @@
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Earth Monk</h2>
+                  <h2>The House Of Earth Monk</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
@@ -350,7 +353,13 @@
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Papa</h2>
+                  <h2>Papa & co</h2>
+                  <!-- <p>Rooftop Cafe</p> -->
+                </div>
+              </div>
+              <div class="slider-nav-item">
+                <div class="rest-detail">
+                  <h2>Arbre</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
@@ -362,7 +371,7 @@
 
 
       <!-- Upcoming projects start -->
-      <section class="uc-projects">
+      <section class="upcoming-project">
         <div class="container">
           <div class="title-wrapper">
             <!-- <div class="caption">
@@ -374,46 +383,55 @@
           </div>
 
           <div class="slider-wrapper">
-            <div class="slider slider-single">
+            <div class="slider slider-double">
               <div class="slider-item">
-                <img src="./assets/2.webp" alt="" />
+                <img src="./assets/By The Creek.webp" alt="" />
               </div>
               <div class="slider-item">
                 <img
-                  src="./assets/exterior outdoor seating area 1.webp"
+                  src="./assets/Insitu.webp"
                   alt=""
                 />
               </div>
               <div class="slider-item">
-                <img src="./assets/060A4176 (1).webp" alt="" />
+                <img src="./assets/June Cafe.webp" alt="" />
               </div>
               <div class="slider-item">
-                <img src="./assets/papa (14).webp" alt="" />
+                <img src="./assets/Saanjro.webp" alt="" />
+              </div>
+              <div class="slider-item">
+                <img src="./assets/Xia Rooftop Bistro.webp" alt="" />
               </div>
             </div>
 
-            <div class="slider slider-nav">
+            <div class="slider slider-navbar">
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Aranyani</h2>
+                  <h2>By The Creek</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Earth Monk</h2>
+                  <h2>Insitu</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Finca</h2>
+                  <h2>June Cafe</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Papa</h2>
+                  <h2>Saanjro</h2>
+                  <!-- <p>Rooftop Cafe</p> -->
+                </div>
+              </div>
+              <div class="slider-nav-item">
+                <div class="rest-detail">
+                  <h2>Xia Rooftop Bistro</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
@@ -609,6 +627,32 @@
             },
           ],
         });
+      });
+    </script>
+    <script>
+      $(function () {
+        $(".slider-double").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: false,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          asNavFor: ".slider-navbar",
+        });
+        $(".slider-navbar").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          asNavFor: ".slider-double",
+          // dots: true,
+          centerMode: true,
+          arrows: false,
+          // focusOnSelect: true
+        });
+
+        
       });
     </script>
   </body>

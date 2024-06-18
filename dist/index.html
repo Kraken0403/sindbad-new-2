@@ -30,8 +30,8 @@
     />
     
     <title>Sindbad The Restaurant Consulting Company</title>
-    <script type="module" crossorigin src="/assets/main-2a5296b7.js"></script>
-    <link rel="stylesheet" href="/assets/main-3227dc62.css">
+    <script type="module" crossorigin src="/assets/main-df11fe92.js"></script>
+    <link rel="stylesheet" href="/assets/main-69f0a98e.css">
   </head>
   <body>
     <div id="app">
@@ -329,6 +329,9 @@
               <div class="slider-item">
                 <img src="/assets/papa (14)-5e022994.webp" alt="" />
               </div>
+              <div class="slider-item">
+                <img src="/assets/arbre-05de51ce.jpg" alt="" />
+              </div>
             </div>
 
             <div class="slider slider-nav">
@@ -340,7 +343,7 @@
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Earth Monk</h2>
+                  <h2>The House Of Earth Monk</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
@@ -352,7 +355,13 @@
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Papa</h2>
+                  <h2>Papa & co</h2>
+                  <!-- <p>Rooftop Cafe</p> -->
+                </div>
+              </div>
+              <div class="slider-nav-item">
+                <div class="rest-detail">
+                  <h2>Arbre</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
@@ -364,7 +373,7 @@
 
 
       <!-- Upcoming projects start -->
-      <section class="uc-projects">
+      <section class="upcoming-project">
         <div class="container">
           <div class="title-wrapper">
             <!-- <div class="caption">
@@ -376,46 +385,55 @@
           </div>
 
           <div class="slider-wrapper">
-            <div class="slider slider-single">
+            <div class="slider slider-double">
               <div class="slider-item">
-                <img src="/assets/2-c6f05640.webp" alt="" />
+                <img src="/assets/By The Creek-6d626e19.webp" alt="" />
               </div>
               <div class="slider-item">
                 <img
-                  src="/assets/exterior outdoor seating area 1-59714844.webp"
+                  src="/assets/Insitu-8c41e7e0.webp"
                   alt=""
                 />
               </div>
               <div class="slider-item">
-                <img src="/assets/060A4176 (1)-1ce30020.webp" alt="" />
+                <img src="/assets/June Cafe-88cd8a3d.webp" alt="" />
               </div>
               <div class="slider-item">
-                <img src="/assets/papa (14)-5e022994.webp" alt="" />
+                <img src="/assets/Saanjro-689a2868.webp" alt="" />
+              </div>
+              <div class="slider-item">
+                <img src="/assets/Xia Rooftop Bistro-944b74dc.webp" alt="" />
               </div>
             </div>
 
-            <div class="slider slider-nav">
+            <div class="slider slider-navbar">
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Aranyani</h2>
+                  <h2>By The Creek</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Earth Monk</h2>
+                  <h2>Insitu</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Finca</h2>
+                  <h2>June Cafe</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
               <div class="slider-nav-item">
                 <div class="rest-detail">
-                  <h2>Papa</h2>
+                  <h2>Saanjro</h2>
+                  <!-- <p>Rooftop Cafe</p> -->
+                </div>
+              </div>
+              <div class="slider-nav-item">
+                <div class="rest-detail">
+                  <h2>Xia Rooftop Bistro</h2>
                   <!-- <p>Rooftop Cafe</p> -->
                 </div>
               </div>
@@ -611,6 +629,32 @@
             },
           ],
         });
+      });
+    </script>
+    <script>
+      $(function () {
+        $(".slider-double").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: false,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          asNavFor: ".slider-navbar",
+        });
+        $(".slider-navbar").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          asNavFor: ".slider-double",
+          // dots: true,
+          centerMode: true,
+          arrows: false,
+          // focusOnSelect: true
+        });
+
+        
       });
     </script>
   </body>
