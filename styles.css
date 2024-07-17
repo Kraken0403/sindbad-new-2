@@ -1195,7 +1195,25 @@ header::before {
 .how-to-begin-new-2 li{
   font-size: 15px;
 }
-
+.privacy-policy{
+  padding: 15rem 0;
+ }
+ 
+ .privacy-policy-title h2 {
+   text-align: center;
+   font-size: 4rem;
+   padding: 25px 0;
+ }
+ 
+ .privacy-policy-content p, .privacy-policy-content li {
+   text-align: justify;
+   font-size: 2rem;
+ }
+ 
+ .privacy-policy-content p {
+   padding-bottom: 10px;
+ }
+ 
 
 /* how to begin 2 end */
 /* how to begin 3 start */
@@ -2510,4 +2528,33 @@ margin-top: 50px;
   margin-top: 0;
 }
 
+.privacy-policy-title h2 {
+  font-size: 15rem;
+}
+.privacy-policy {
+  padding: 80rem 0;
+}
+
+.privacy-policy-content p, .privacy-policy-content li{
+  font-size: 6rem;
+}
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
 }
